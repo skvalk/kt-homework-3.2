@@ -6,7 +6,7 @@ class MainKtTest {
 
     @Test
     fun calculateCommission() {
-    //    val amount = 10_000_00
+        val amount = 10_000_00
         val previousBuyingSum = 300_00
         for (card in TypeCard.values()) {
             val result = calculateCommission(
@@ -29,7 +29,7 @@ class MainKtTest {
     }
 
     @Test
-    fun calculateWithCommission(){
+    fun calculateWithCommission() {
 
         val result = calculateCommission(
             amount = 100_000_00,
@@ -37,7 +37,7 @@ class MainKtTest {
             typeOfCard = TypeCard.MASTERCARD
         )
         println(result)
-        assertEquals(62000,result)
+        assertEquals(62000, result)
     }
 
     @Test
