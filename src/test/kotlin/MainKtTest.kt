@@ -6,7 +6,7 @@ class MainKtTest {
 
     @Test
     fun calculateCommission() {
-        val amount = 10_000_00
+    //    val amount = 10_000_00
         val previousBuyingSum = 300_00
         for (card in TypeCard.values()) {
             val result = calculateCommission(
